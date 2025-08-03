@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2 class="text-warning">✏️ Update Student</h2>
+<form method="post" class="mt-3">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" name="name" value="{{ student[1] }}" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Age</label>
+        <input type="number" name="age" value="{{ student[2] }}" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-warning">Update Student</button>
+</form>
+{% endblock %}
